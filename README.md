@@ -1,2 +1,2 @@
 # Java-programming
-These are the codes that I've practiced in Java.
+This repo contains the codes that I've practiced in Java.
