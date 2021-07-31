@@ -26,7 +26,6 @@ public class objectdemo {
 		
 		obj fact = new fact();
 		
-		
 	}
 
 }
