@@ -12,6 +12,7 @@ public class usingStacks {
    mystack.add("Lupin");
    
    System.out.println(mystack.pop());
+   System.out.println(mystack.peek());
    System.out.println(mystack);
  }
  
