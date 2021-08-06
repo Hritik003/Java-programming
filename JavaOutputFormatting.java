@@ -1,5 +1,6 @@
 	import java.util.Scanner;
-public class JavaOutputFormatting {
+public class JavaOutputFormatting 
+{
 
 
 	
