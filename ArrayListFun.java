@@ -7,6 +7,8 @@ public static void main(String[] args) {
 	ArrayFUN Namelist = new ArrayFUN();
 	
 	Namelist.add("Hritik");
+	Namelist.add("Pawan");
+	System.out.println(ArrayFUN.get());
 	
 	
 }
