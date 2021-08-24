@@ -5,6 +5,14 @@ public class camera {
 	private boolean  Active = true;
 	String Serialnumber;
 	
+	Cameratype cameratype = Cameratype.PTZ;
+			
+	enum Cameratype {PTZ, EPTZ, STATIONARY};
+	
+	public camera(String SerialNumber) {
+		this.Serialnumber = SerialNumber;
+	}
+
 	public String toString() {
 		return " Serial number :" + Serialnumber + "\n" + " Active :" +Active + "\n" +" Position :" +Position.toString() ;
 	}
@@ -13,14 +21,15 @@ public class camera {
 	boolean getActive() {
 		return Active;
 	}
+	//getter 
 	
-	Position getPosition()
+	Position getPosition()  /* getter method always returns a value. Also called as "accessors" */
 	{
 		return Position;
 	}
-	
+	//setter
 	void SetPosition(Position Position) {
-		this.Position = Position;
+		this.Position = Position;   /* as the name suggest, setter method sets or updates a value. Also called as "mutators" */
 	}
 	void SetPosition(int x, int y, int z)
 	{
@@ -43,5 +52,8 @@ public class camera {
 		Position.tilt =0;
 		Position.zoom =0;
 		
+	}
+	void setcameratype(String Cameratype) {
+		this.cameratype =  camera.Cameratype.valueOf(Cameratype);
 	}
 }
